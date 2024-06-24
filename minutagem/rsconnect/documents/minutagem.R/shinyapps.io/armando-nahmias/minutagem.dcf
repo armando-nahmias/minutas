@@ -1,0 +1,12 @@
+name: minutagem
+title: minutagem
+username: armando-nahmias
+account: armando-nahmias
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12220710
+bundleId: 8776074
+url: https://armando-nahmias.shinyapps.io/minutagem/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,0 +1,52 @@
+---
+embed-resources: true
+
+format:
+  html:
+    css: estilo.css
+  docx:
+    reference-doc: estilo.docx
+
+params:
+          numero: '9001316-39.2024.8.23.0000'
+---
+
+
+
+```{r}
+#| echo: false
+
+colunas <- c('Processo', 'Classe', 'Recorrente', 'Recorrido', 'Autuação', 'Relator')
+
+
+dados <- readr::read_csv('partes.csv', col_names = colunas, col_types = 'c') |> 
+          dplyr::filter(Processo == params$numero)
+
+
+
+
+```
+
+
+**`r dados$Classe` Nº `r dados$Processo`**
+
+**RECORRENTE: `r dados$Recorrente`**
+
+**RECORRIDO: `r dados$Recorrido`**
+
+**RELATOR: DES. `r dados$Relator`**
+
+
+# Despacho
+
+
+Trata-se de `r dados$Classe` movida por `r dados$Recorrente` contra `r dados$Recorrido`.
+
+Boa Vista, Roraima, `r format(Sys.Date(), format = '%d/%m/%Y')` 
+
+
+
+
+
+
+

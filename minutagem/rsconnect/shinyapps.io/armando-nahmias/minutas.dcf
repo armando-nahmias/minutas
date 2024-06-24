@@ -1,0 +1,12 @@
+name: minutas
+title: minutas
+username: armando-nahmias
+account: armando-nahmias
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12220311
+bundleId: 8776010
+url: https://armando-nahmias.shinyapps.io/minutas/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
